@@ -1,13 +1,74 @@
 body {
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardP {
+  display: flex;
+  width: fit-content;
+  box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.17),
+    0px 0px 12.1px rgba(0, 0, 0, 0.101), 0px 0px 54px rgba(0, 0, 0, 0.069);
+  padding: 1rem;
+}
+.cardP > img {
+  align-self: center;
+  aspect-ratio: initial;
+  height: 7rem;
+}
+.cardP > div {
+  padding: 1rem;
+}
+li {
+  list-style: "- ";
+  list-style-position: inside;
+}
+
+.cont {
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  outline: none;
+  border: none;
+  font-size: 2.3rem;
+  font-weight: 1000;
+  color: white;
+  background-color: rgb(230, 178, 83);
+  cursor: pointer;
+  transition: background-color 400ms ease;
+}
+button:hover {
+  background-color: rgb(255, 209, 60);
+}
+.cardsContainer {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.cardsContainer * {
+  width: 100%;
 }
